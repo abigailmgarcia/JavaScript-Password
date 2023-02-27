@@ -1,6 +1,10 @@
 // Assignment code here
 function generatePassword() {
-  console.log("hey you clicked the button!")
+  var passwordLength;
+  var includeLowercase;
+  var inlcudeUppercase;
+  var inlcudeNumericval;
+  var includeSpecialchar;
 
 
   return "generated password will go here";
