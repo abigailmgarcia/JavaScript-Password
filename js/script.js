@@ -28,6 +28,13 @@ includeUppercase = confirm("Include uppercase characters?");
 includeNumericval = confirm("Include numeric values?");
 includeSpecialchar = confirm("Include special characters?");
 
+// need to validate input 
+if(!includeLowercase && !includeUppercase && !includeNumericval && !includeSpecialchar) {
+  alert("Invalid. Must select at least one character type.");
+} else { 
+  return password = ("");
+}
+
 //variables for characters
 var lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -48,14 +55,13 @@ if (includeSpecialchar) {
   charSet += specialCharacters;
 }
 
-// need to validate input 
-if(!includeLowercase && !includeUppercase && !includeNumericval && !includeSpecialchar) {
-  alert("Invalid. Must select at least one character type.");
-} else { 
+var password = ("");
 
+
+//Create one password value using arrays
+for (let i = 0; i < passwordLength; i++) {
+  password[i] = (selectionArray[Math.floor(Math.random() * selectionArray.length)]);
 }
-console.log()
-
 
   return(writePassword); //"generated password will go here";
 }
