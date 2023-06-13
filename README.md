@@ -18,6 +18,10 @@ To use this web app you will first click on the "generate password button", then
 
 MIT License: For more information, please refer to the license listed in the repository
 
+## Deployed Site
+
+https://abigailmgarcia.github.io/JavaScript-Password/
+
 
 
 
